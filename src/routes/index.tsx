@@ -1,5 +1,5 @@
-import { createFileRoute } from '@tanstack/react-router'
-import App from '../App'
+import { createFileRoute } from '@tanstack/react-router';
+import LandingPage from '../feature/LandingPage/LandingPage';
 
 export const Route = createFileRoute('/')({
   component: Index,
@@ -7,9 +7,9 @@ export const Route = createFileRoute('/')({
 
 function Index() {
   return (
-    <div className="p-2">
-      <h3>Welcome Home!</h3>
-      <App/>
+    <div >
+      <LandingPage/>
+      {/* <App/> */}
     </div>
   )
 }
