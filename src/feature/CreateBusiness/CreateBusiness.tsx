@@ -4,6 +4,7 @@ import type { AnyFieldApi } from '@tanstack/react-form'
 import ScreenSizeDisplay from '../../utils/component/ScreenSizeDisplay';
 import { PlusIcon, Trash2 } from 'lucide-react';
 import { Button } from '../../commoncomponents/buttons/button';
+import CustomerInfo from '../component/CustomerInfo';
 
 interface UserBusinessInfo {
   name: string;
@@ -375,9 +376,10 @@ const form = useForm({
             Cancel
           </Button>
 
-
         </div>
+          
       </div>
+                {/* <CustomerInfo /> */}
     </div>
 
   )
